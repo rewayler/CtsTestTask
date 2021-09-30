@@ -1,0 +1,8 @@
+c:\users\rty\documents\visual studio 2015\Projects\CtsTestTaskConsole\CtsTestTask\bin\Debug\CtsTestTask.dll
+c:\users\rty\documents\visual studio 2015\Projects\CtsTestTaskConsole\CtsTestTask\bin\Debug\CtsTestTask.pdb
+c:\users\rty\documents\visual studio 2015\Projects\CtsTestTaskConsole\CtsTestTask\bin\Debug\CTSTestApplication.dll
+c:\users\rty\documents\visual studio 2015\Projects\CtsTestTaskConsole\CtsTestTask\bin\Debug\CTSTestApplication.pdb
+c:\users\rty\documents\visual studio 2015\Projects\CtsTestTaskConsole\CtsTestTask\bin\Debug\CTSTestApplication.xml
+c:\users\rty\documents\visual studio 2015\Projects\CtsTestTaskConsole\CtsTestTask\obj\Debug\CtsTestTask.dll
+c:\users\rty\documents\visual studio 2015\Projects\CtsTestTaskConsole\CtsTestTask\obj\Debug\CtsTestTask.pdb
+c:\users\rty\documents\visual studio 2015\Projects\CtsTestTaskConsole\CtsTestTask\bin\Debug\TradesList.xsd

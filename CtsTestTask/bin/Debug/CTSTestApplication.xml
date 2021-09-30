@@ -1,0 +1,277 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CTSTestApplication</name>
+    </assembly>
+    <members>
+        <member name="T:CTSTestApplication.Component">
+            <summary>
+            Ancestor of system components
+            </summary>
+        </member>
+        <member name="P:CTSTestApplication.Component.Id">
+            <summary>
+            Id of component
+            </summary>
+        </member>
+        <member name="M:CTSTestApplication.Component.InsertToDataBase(CTSTestApplication.IDataAdapter)">
+            <summary>
+            Inserts data to DB
+            </summary>
+            <param name="dataAdapter"></param>
+        </member>
+        <member name="M:CTSTestApplication.Component.UpdateInDataBase(CTSTestApplication.IDataAdapter)">
+            <summary>
+            Updates data in DB
+            </summary>
+            <param name="dataAdapter"></param>
+        </member>
+        <member name="M:CTSTestApplication.Component.RemoveFromDataBase(CTSTestApplication.IDataAdapter)">
+            <summary>
+            Removes data from DB
+            </summary>
+            <param name="dataAdapter"></param>
+        </member>
+        <member name="M:CTSTestApplication.Component.GetFromDataBase(CTSTestApplication.IDataAdapter)">
+            <summary>
+            Gets data from DB
+            </summary>
+            <param name="dataAdapter"></param>
+        </member>
+        <member name="M:CTSTestApplication.Component.Serialize">
+            <summary>
+            Serialize itself to string
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CTSTestApplication.IDataAdapter.BeginTransaction(System.String)">
+            <summary>
+            Creates new DB transaction
+            </summary>
+            <param name="transactionName">Name of transaction</param>
+        </member>
+        <member name="M:CTSTestApplication.IDataAdapter.CommitTransaction(System.String)">
+            <summary>
+            Commits DB transaction
+            </summary>
+            <param name="transactionName">Name of transaction</param>
+        </member>
+        <member name="M:CTSTestApplication.IDataAdapter.RollbackTransaction(System.String)">
+            <summary>
+            Rollbacks DB transaction
+            </summary>
+            <param name="transactionName">Name of transaction</param>
+        </member>
+        <member name="M:CTSTestApplication.IDataAdapter.Process(CTSTestApplication.Operation,System.String,System.Object[])">
+            <summary>
+            SimulateSQLProcess operation in database
+            </summary>
+            <param name="operation">DB operation</param>
+            <param name="command">DB command</param>
+            <param name="paramList">External parameters</param>
+        </member>
+        <member name="P:CTSTestApplication.IDataAdapter.CheckActiveTransaction">
+            <summary>
+            Is some transaction active?
+            </summary>
+        </member>
+        <member name="T:CTSTestApplication.DataAdapter">
+            <summary>
+            Class for working with database
+            </summary>
+        </member>
+        <member name="M:CTSTestApplication.DataAdapter.#ctor(System.String)">
+            <summary>
+            Constructor of DataAdapter
+            </summary>
+            <param name="connectionString">Defines connection string to database.
+            Use path to directory of log file for testing purposes.
+            If file doesn't exist it will be created.</param>
+        </member>
+        <member name="M:CTSTestApplication.DataAdapter.BeginTransaction(System.String)">
+            <summary>
+            Creates new DB transaction
+            </summary>
+            <param name="transactionName">Name of transaction</param>
+        </member>
+        <member name="M:CTSTestApplication.DataAdapter.CommitTransaction(System.String)">
+            <summary>
+            Commits DB transaction
+            </summary>
+            <param name="transactionName">Name of transaction</param>
+        </member>
+        <member name="M:CTSTestApplication.DataAdapter.RollbackTransaction(System.String)">
+            <summary>
+            Rollbacks DB transaction
+            </summary>
+            <param name="transactionName">Name of transaction</param>
+        </member>
+        <member name="M:CTSTestApplication.DataAdapter.Process(CTSTestApplication.Operation,System.String,System.Object[])">
+            <summary>
+            Simulate SQL operation in database
+            </summary>
+            <param name="operation">DB operation</param>
+            <param name="command">DB command</param>
+            <param name="paramList">Additional parameters</param>
+        </member>
+        <member name="M:CTSTestApplication.DataAdapter.SimulateSQLProcess">
+            <summary>
+            In 5% it simulates SQL exception
+            </summary>
+        </member>
+        <member name="M:CTSTestApplication.DataAdapter.GetData(System.Int32)">
+            <summary>
+            90% returns random Trade
+            10% returns null
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="P:CTSTestApplication.DataAdapter.CheckActiveTransaction">
+            <summary>
+            Is some transaction active?
+            </summary>
+        </member>
+        <member name="T:CTSTestApplication.Operation">
+            <summary>
+            DB operation
+            </summary>
+        </member>
+        <member name="F:CTSTestApplication.Operation.Insert">
+            <summary>
+            Insert to database
+            </summary>
+        </member>
+        <member name="F:CTSTestApplication.Operation.Update">
+            <summary>
+            Update in database
+            </summary>
+        </member>
+        <member name="F:CTSTestApplication.Operation.Delete">
+            <summary>
+            Delete from database
+            </summary>
+        </member>
+        <member name="F:CTSTestApplication.Operation.Get">
+            <summary>
+            Get from database
+            </summary>
+        </member>
+        <member name="T:CTSTestApplication.Tester">
+            <summary>
+            Class for preparing test data
+            </summary>
+        </member>
+        <member name="F:CTSTestApplication.Tester.testDataList">
+            <summary>
+            List with testing data
+            </summary>
+        </member>
+        <member name="M:CTSTestApplication.Tester.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:CTSTestApplication.Tester.CreateTestFile(System.String,System.Int32)">
+            <summary>
+            Creates test XML file in defined path with defined number of items.
+            </summary>
+            <param name="path">Path to folder, where TradesList.xml file will be created.</param>
+            <param name="count">Number of trades to create in XML file.</param>
+        </member>
+        <member name="M:CTSTestApplication.Tester.PrepareTestTrade">
+            <summary>
+            Prepare new test trade
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CTSTestApplication.Direction">
+            <summary>
+            Direction of trade
+            </summary>
+        </member>
+        <member name="F:CTSTestApplication.Direction.Buy">
+            <summary>
+            Buy direction
+            </summary>
+        </member>
+        <member name="F:CTSTestApplication.Direction.Sell">
+            <summary>
+            Sell direction
+            </summary>
+        </member>
+        <member name="T:CTSTestApplication.Trade">
+            <summary>
+            Class for working with Trade
+            </summary>
+        </member>
+        <member name="P:CTSTestApplication.Trade.Isin">
+            <summary>
+            ISIN of security
+            </summary>
+        </member>
+        <member name="P:CTSTestApplication.Trade.Quantity">
+            <summary>
+            Quantity of trade
+            </summary>
+        </member>
+        <member name="P:CTSTestApplication.Trade.Price">
+            <summary>
+            Price of trade
+            </summary>
+        </member>
+        <member name="P:CTSTestApplication.Trade.Direction">
+            <summary>
+            Direction of trade
+            </summary>
+        </member>
+        <member name="M:CTSTestApplication.Trade.#ctor">
+            <summary>
+            Constructor of trade
+            </summary>
+        </member>
+        <member name="M:CTSTestApplication.Trade.#ctor(System.Int32,System.String,System.Decimal,System.Decimal,CTSTestApplication.Direction)">
+            <summary>
+            Constructor of trade
+            </summary>
+            <param name="id">Id of trade</param>
+            <param name="isin">ISIN of security</param>
+            <param name="quantity">Quantity of trade</param>
+            <param name="price">Price of trade</param>
+            <param name="direction">Direction of trade</param>
+        </member>
+        <member name="M:CTSTestApplication.Trade.Create(CTSTestApplication.IDataAdapter)">
+            <summary>
+            Creates trade in database
+            </summary>
+            <param name="dataAdapter">DataAdapter to database</param>
+            <returns></returns>
+        </member>
+        <member name="M:CTSTestApplication.Trade.Edit(CTSTestApplication.IDataAdapter)">
+            <summary>
+            Update trade in database
+            </summary>
+            <param name="dataAdapter">DataAdapter to database</param>
+            <returns></returns>
+        </member>
+        <member name="M:CTSTestApplication.Trade.Delete(CTSTestApplication.IDataAdapter)">
+            <summary>
+            Delete trade from database
+            </summary>
+            <param name="dataAdapter">DataAdapter to database</param>
+            <returns></returns>
+        </member>
+        <member name="M:CTSTestApplication.Trade.Load(CTSTestApplication.IDataAdapter)">
+            <summary>
+            Load trade from database
+            </summary>
+            <param name="dataAdapter">DataAdapter to database</param>
+            <returns></returns>
+        </member>
+        <member name="M:CTSTestApplication.Trade.CheckValidity">
+            <summary>
+            Checks the validity of trade.
+            </summary>
+        </member>
+    </members>
+</doc>

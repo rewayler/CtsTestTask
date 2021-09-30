@@ -1,0 +1,12 @@
+c:\users\rty\documents\visual studio 2015\Projects\CtsTestTaskConsole\CtsTestTaskConsole\bin\Debug\CtsTestTaskConsole.exe.config
+c:\users\rty\documents\visual studio 2015\Projects\CtsTestTaskConsole\CtsTestTaskConsole\bin\Debug\CtsTestTaskConsole.exe
+c:\users\rty\documents\visual studio 2015\Projects\CtsTestTaskConsole\CtsTestTaskConsole\bin\Debug\CtsTestTaskConsole.pdb
+c:\users\rty\documents\visual studio 2015\Projects\CtsTestTaskConsole\CtsTestTaskConsole\bin\Debug\CTSTestApplication.dll
+c:\users\rty\documents\visual studio 2015\Projects\CtsTestTaskConsole\CtsTestTaskConsole\bin\Debug\CTSTestApplication.pdb
+c:\users\rty\documents\visual studio 2015\Projects\CtsTestTaskConsole\CtsTestTaskConsole\bin\Debug\CTSTestApplication.xml
+c:\users\rty\documents\visual studio 2015\Projects\CtsTestTaskConsole\CtsTestTaskConsole\obj\Debug\CtsTestTaskConsole.csprojResolveAssemblyReference.cache
+c:\users\rty\documents\visual studio 2015\Projects\CtsTestTaskConsole\CtsTestTaskConsole\obj\Debug\CtsTestTaskConsole.exe
+c:\users\rty\documents\visual studio 2015\Projects\CtsTestTaskConsole\CtsTestTaskConsole\obj\Debug\CtsTestTaskConsole.pdb
+c:\users\rty\documents\visual studio 2015\Projects\CtsTestTaskConsole\CtsTestTaskConsole\bin\Debug\CtsTestTask.dll
+c:\users\rty\documents\visual studio 2015\Projects\CtsTestTaskConsole\CtsTestTaskConsole\bin\Debug\CtsTestTask.pdb
+c:\users\rty\documents\visual studio 2015\Projects\CtsTestTaskConsole\CtsTestTaskConsole\bin\Debug\TradesList.xsd

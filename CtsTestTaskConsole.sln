@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CtsTestTaskConsole", "CtsTestTaskConsole\CtsTestTaskConsole.csproj", "{752482AE-3FEB-4E9A-994F-42C1FA6B398C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CtsTestTask", "CtsTestTask\CtsTestTask.csproj", "{4192FB84-4AFA-496C-869D-C6E33CADCA77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{752482AE-3FEB-4E9A-994F-42C1FA6B398C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{752482AE-3FEB-4E9A-994F-42C1FA6B398C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{752482AE-3FEB-4E9A-994F-42C1FA6B398C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{752482AE-3FEB-4E9A-994F-42C1FA6B398C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4192FB84-4AFA-496C-869D-C6E33CADCA77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4192FB84-4AFA-496C-869D-C6E33CADCA77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4192FB84-4AFA-496C-869D-C6E33CADCA77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4192FB84-4AFA-496C-869D-C6E33CADCA77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
